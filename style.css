@@ -1,120 +1,189 @@
-/* STYLE SHEET FOR 632 PAGE */
-
-/* --- BODY --- */
+/* --- typography & base styles --- */
 body {
-  background-color: #f8f4ff;
-  color: #2e2e2e;
-  font-family: "Segoe UI", Verdana, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #2d2d2d;
   line-height: 1.6;
+  background-color: #fff0f5;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
 }
 
-/* --- HEADINGS --- */
-h1 {
-  color: #2e1a47;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5rem;
+/* --- layout & container --- */
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(216, 27, 96, 0.15);
 }
 
-h2 {
-  color: #4a148c;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 2rem;
-  border-bottom: 2px solid #d1c4e9;
-  padding-bottom: 10px;
-}
-
+/* --- headings --- */
+h1,
+h2,
 h3 {
-  color: #7b1fa2;
-  text-align: center;
-  margin-top: 1.5rem;
+  font-weight: 700;
+  color: #b00058;
+  margin-top: 1.5em;
 }
 
-/* --- TEXT & PARAGRAPHS --- */
-p {
-  color: #2e2e2e;
-  padding: 10px;
-  max-width: 800px;
-  margin: 0 auto;
+h1 {
   text-align: center;
+  border-bottom: 3px solid #ffc2d1;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
-/* --- LINKS --- */
+/* --- links --- */
 a {
-  color: #0056b3;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: #b00058;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 a:hover {
-  color: #d32f2f;
-  text-decoration: underline;
-  background-color: #f0f0f0;
+  background-color: #ffc2d1; /* highlights link on hover */
+  color: #000;
 }
 
-/* ADA Requirement: Focus State for Keyboard Users */
-a:focus {
-  outline: 3px solid #0056b3;
-  background-color: #fff;
-}
-
-/* --- LISTS --- */
-ul,
-ol {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px 40px;
-  width: fit-content;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-li {
-  color: #333;
-  margin-bottom: 8px;
-}
-
-/* --- TABLES --- */
-table {
-  border-collapse: collapse;
-  margin: 20px auto;
-  padding: 10px;
-  width: 80%;
-  max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-th {
-  background-color: #4a148c;
-  color: white;
-  padding: 12px;
-  text-align: center;
-}
-
-td {
-  color: #333;
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-  background-color: #f1e6ff;
-}
-
-/* --- IMAGES --- */
+/* --- images --- */
 img {
-  display: block;
-  margin: 20px auto;
-  border: 5px solid #4a148c;
-  border-radius: 4px;
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #ffc2d1;
+  border-radius: 50%;
+}
+
+/* --- lists --- */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* --- forms --- */
+form {
+  background-color: #fff9fb;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffdeeb;
+}
+
+label {
+  font-weight: bold;
+  color: #b00058;
+}
+
+/* input fields */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #b00058;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #b00058;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #880044;
+}
+
+/* ---footer --- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer img {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+/* --- flexbox layout for interests section --- */
+.bio-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.bio-text {
+  flex: 2;
+}
+
+.bio-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* vinyl record, decorative image */
+.vinyl-spin {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: spin-record 10s linear infinite;
+}
+
+.vinyl-spin:hover {
+  /* pauses animation */
+  animation-play-state: paused;
+}
+
+/* define spin animation */
+@keyframes spin-record {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- mobile --- */
+@media (max-width: 600px) {
+  .bio-row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .bio-text ul {
+    text-align: left;
+    display: inline-block;
+  }
 }
