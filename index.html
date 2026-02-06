@@ -1,22 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esom's Bio for Accessible Computing</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+
     <header>
-      <h1>About Esom Too-Chiobi</h1>
+      <h1>Esom Too-Chiobi's Bio</h1>
     </header>
 
     <main>
-      <section>
+      <section id="about">
         <img
           src="https://media.licdn.com/dms/image/v2/D5603AQGNs7c1aJJwTg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685077656209?e=2147483647&v=beta&t=J9t7RGfJopx2Oy4nxHuJuH6N73U2W7Izxom7rv8wM5I"
-          alt="Headshot of Esom Too-Chiobi"
-        />
+          alt="Headshot of Esom Too-Chiobi">
         <h2>My Background</h2>
 
         <p>
@@ -25,9 +33,18 @@
           Computer Engineering at Texas A&M. I am currently working on my
           thesis, which focuses on music information retrieval (MIR).
         </p>
+
+        <h3>Technical Skills</h3>
+        <ul>
+          <li><strong>Languages:</strong> Python, Java, C++, SQL</li>
+          <li>
+            <strong>Focus Areas:</strong> Software Development, Human-Computer
+            Interaction (HCI)
+          </li>
+        </ul>
       </section>
 
-      <section>
+      <section id="interests">
         <h2>Interests in Accessibility</h2>
 
         <div class="bio-row">
@@ -56,14 +73,13 @@
               <img
                 src="https://pngimg.com/d/vinyl_PNG81.png"
                 alt="Listen to Goodbye (Warm Up) by Ayra Starr featuring Asake on YouTube"
-                class="vinyl-spin"
-              />
+                class="vinyl-spin">
             </a>
           </div>
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <h2>Contact Me</h2>
         <p>If you'd like to connect for the team project, please reach out!</p>
 
@@ -74,7 +90,7 @@
         >
           <div class="form-group">
             <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required>
           </div>
 
           <div class="form-group">
@@ -83,14 +99,14 @@
           </div>
 
           <div class="button-group">
-            <input type="reset" value="Reset" />
+            <input type="reset" value="Reset">
 
-            <input type="submit" value="Send Email" />
+            <input type="submit" value="Send Email">
           </div>
         </form>
       </section>
 
-      <section>
+      <section id="links">
         <h2>External Links</h2>
         <p>
           Return to the
@@ -105,8 +121,7 @@
         <img
           src="https://static.vecteezy.com/system/resources/thumbnails/029/205/445/small/heart-decorative-calligraphic-elements-for-decoration-png.png"
           alt=""
-          class="footer-deco"
-        />
+          class="footer-deco">
         <p>&copy; 2026 Esom Too-Chiobi</p>
       </footer>
     </main>
